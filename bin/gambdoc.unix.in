@@ -6,7 +6,6 @@
 #   GAMBDOC_BROWSER
 #   GAMBDOC_ARG1
 #   GAMBDOC_ARG2
-#   GAMBDOC_ARG3
 #   ...
 
 # echo GAMBDOC_GAMBITDIR_BIN = "${GAMBDOC_GAMBITDIR_BIN}"
@@ -14,7 +13,6 @@
 # echo GAMBDOC_BROWSER = "${GAMBDOC_BROWSER}"
 # echo GAMBDOC_ARG1 = "${GAMBDOC_ARG1}"
 # echo GAMBDOC_ARG2 = "${GAMBDOC_ARG2}"
-# echo GAMBDOC_ARG3 = "${GAMBDOC_ARG3}"
 
 find_in_path() # exe-name, sets `$exe'
 {
@@ -49,7 +47,7 @@ find_browser() # sets `$exe'
 operation_help() # sets `$exe'
 {
   if find_browser; then
-    url="file://${GAMBDOC_GAMBITDIR_DOC}/gambit.html#${GAMBDOC_ARG3}"
+    url="file://${GAMBDOC_GAMBITDIR_DOC}/gambit.html#${GAMBDOC_ARG2}"
     case "$browser" in
       osascript ) $exe <<EOF ;;
 tell application "Safari"
