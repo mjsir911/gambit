@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Script parameters are passed in the following environment variables:
-#   GAMBDOC_GAMBITDIR_BIN
+    GAMBDOC_GAMBITDIR_BIN=$0
 #   GAMBDOC_GAMBITDIR_DOC
 #   GAMBDOC_ARG1
 #   GAMBDOC_ARG2
